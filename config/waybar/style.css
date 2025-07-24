@@ -1,14 +1,14 @@
 * {
   border: none;
   font-family: "JetBrainsMono Nerd Font Mono";
-  font-size: 8pt;
+  font-size: 9pt;
   font-weight: bold;
   min-height: 0;
 }
 
 window#waybar {
   background: #000;
-  color: #fff;
+  color: #aaa;
   border-bottom: 1px solid #444;
 }
 
@@ -43,30 +43,30 @@ tooltip {
 }
 
 #workspaces button:hover {
-  color: #fff;
+  color: #aaa;
   box-shadow: inherit;
   text-shadow: inherit;
   background: black;
 }
 
 #workspaces button.active {
-  color: #fff;
+  color: #aaa;
 }
 
 #workspaces button.active:hover {
-  color: #fff;
+  color: #aaa;
 }
 
 #workspaces button.focused {
-  color: #fff;
+  color: #aaa;
 }
 
 #workspaces button.urgent {
-  color: #fff;
+  color: #aaa;
 }
 
 #window {
-  color: #fff;
+  color: #aaa;
   padding: 0px 10px;
 }
 
