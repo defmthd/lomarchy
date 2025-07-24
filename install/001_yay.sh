@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sudo pacman -S --needed --noconfirm base-devel git
+sudo pacman -S --needed --noconfirm base-devel git \
+  reflector rsync
 
 if ! command -v yay &>/dev/null; then
   cd /tmp
@@ -14,4 +15,3 @@ if ! command -v yay &>/dev/null; then
   # Add fun and color to the pacman installer
   sudo sed -i '/^\[options\]/a Color\nILoveCandy' /etc/pacman.conf
 fi
-
