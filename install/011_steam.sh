@@ -1,4 +1,4 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed \
+yay -S --needed \
   steam
