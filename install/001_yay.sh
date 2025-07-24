@@ -10,7 +10,7 @@ if ! command -v yay &>/dev/null; then
   makepkg -si --noconfirm
   cd -
   rm -rf yay-bin
-  cd ~
+  cd ~/lomarchy
 
   # Add fun and color to the pacman installer
   sudo sed -i '/^\[options\]/a Color\nILoveCandy' /etc/pacman.conf
