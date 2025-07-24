@@ -1,0 +1,100 @@
+* {
+  border: none;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 9pt;
+  font-weight: bold;
+  min-height: 0;
+}
+
+window#waybar {
+  background: #000;
+  opacity: 0.75;
+  color: #fff;
+  border-bottom: 1px solid #444;
+}
+
+tooltip {
+  color: #000;
+  background: #444;
+  font-size: 6px;
+  padding: 4px;
+  margin: 2px;
+  opacity: 0.9;
+}
+
+#workspaces,
+#window,
+#cpu,
+#custom-control-panel
+#tray,
+#battery,
+#clock {
+  opacity: 0.9;
+}
+
+#workspaces {
+  margin-left: 8px;
+  padding: 0px 0px;
+}
+
+#workspaces button {
+  color: #777;
+  padding: 0px 8px;
+  margin-bottom: 1px;
+}
+
+#workspaces button:hover {
+  color: #fff;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: black;
+  transition: color 0.0s 0.00s;
+}
+
+#workspaces button.active {
+  color: #fff;
+  transition: color 0.0s 0.00s;
+  transition: background 0.0s 0.00s;
+}
+
+#workspaces button.active:hover {
+  color: #fff;
+}
+
+#workspaces button.focused {
+  color: #fff;
+}
+
+#workspaces button.urgent {
+  color: #fff;
+}
+
+#window {
+  color: #fff;
+  padding: 0px 10px;
+}
+
+#cpu {
+  margin-right: 4px;
+  padding: 0px 10px;
+}
+
+#custom-control-panel {
+  margin-right: 4px;
+  padding: 0px 10px;
+}
+
+#tray {
+  margin-right: 4px;
+  padding: 0px 4px;
+}
+
+#battery {
+  margin-right: 4px;
+  padding: 0px 4px;
+}
+
+#clock {
+  margin-right: 8px;
+  padding: 0px 10px;
+}
