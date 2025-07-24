@@ -3,7 +3,7 @@
 yay -S --noconfirm --needed \
   hyprland polkit-gnome hyprland-qtutils \
   waybar walker-bin mako swaybg swayosd \
-  nautilus sushi \
+  nautilus sushi gvfs gvfs-smb \
   xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
   nwg-look \
   uwsm
