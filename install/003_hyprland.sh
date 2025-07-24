@@ -8,6 +8,14 @@ yay -S --noconfirm --needed \
   nwg-look \
   uwsm
 
-cp -R ./config/hypr ~/.config/
-cp -R ./config/waybar ~/.config/
-cp -R ./config/walker ~/.config/
+if [ ! -d "$HOME/.config/hypr" ]; then
+  ln -s $(pwd)/config/hypr ~/.config/hypr
+fi
+
+if [ ! -d "$HOME/.config/waybar" ]; then
+  ln -s $(pwd)/config/waybar ~/.config/waybar
+fi
+
+if [ ! -d "$HOME/.config/walker" ]; then
+  ln -s $(pwd)/config/walker ~/.config/walker
+fi

@@ -14,4 +14,6 @@ yay -S --noconfirm --needed \
 
 mkdir -p ~/.config
 
-cp -R ./config/kitty ~/.config/
+if [ ! -d "$HOME/.config/kitty" ]; then
+  ln -s $(pwd)/config/kitty ~/.config/kitty
+fi
