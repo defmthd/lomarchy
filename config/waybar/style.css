@@ -8,7 +8,6 @@
 
 window#waybar {
   background: #000;
-  opacity: 0.75;
   color: #fff;
   border-bottom: 1px solid #444;
 }
@@ -48,13 +47,10 @@ tooltip {
   box-shadow: inherit;
   text-shadow: inherit;
   background: black;
-  transition: color 0.0s 0.00s;
 }
 
 #workspaces button.active {
   color: #fff;
-  transition: color 0.0s 0.00s;
-  transition: background 0.0s 0.00s;
 }
 
 #workspaces button.active:hover {
