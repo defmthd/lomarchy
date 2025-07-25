@@ -3,7 +3,7 @@
 yay -S --needed \
   steam
 
-yay -S --noconfirm --needed mangohud gamemode
+yay -S --noconfirm --needed mangohud gamemode xpadneo-dkms
 
 if [ ! -d "$HOME/.config/MangoHud" ]; then
   ln -s $(pwd)/config/MangoHud ~/.config/MangoHud
