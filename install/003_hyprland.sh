@@ -13,6 +13,10 @@ if [ ! -d "$HOME/.config/hypr" ]; then
   ln -s $(pwd)/config/hypr ~/.config/hypr
 fi
 
+if [ ! -d "$HOME/.config/mako" ]; then
+  ln -s $(pwd)/config/mako ~/.config/mako
+fi
+
 if [ ! -d "$HOME/.config/waybar" ]; then
   ln -s $(pwd)/config/waybar ~/.config/waybar
 fi
