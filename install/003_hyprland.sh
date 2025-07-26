@@ -2,7 +2,7 @@
 
 yay -S --noconfirm --needed \
   hyprland hypridle hyprlock polkit-gnome hyprland-qtutils \
-  waybar walker-bin mako swww \
+  waybar walker-bin mako swww wlogout \
   nautilus sushi gvfs gvfs-smb \
   papirus-icon-theme elementary-icon-theme \
   xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
@@ -19,6 +19,10 @@ fi
 
 if [ ! -d "$HOME/.config/waybar" ]; then
   ln -s $(pwd)/config/waybar ~/.config/waybar
+fi
+
+if [ ! -d "$HOME/.config/wlogout" ]; then
+  ln -s $(pwd)/config/wlogout ~/.config/wlogout
 fi
 
 if [ ! -d "$HOME/.config/walker" ]; then
