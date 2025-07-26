@@ -8,11 +8,15 @@ fi
 
 yay -S --noconfirm --needed \
   wget curl unzip inetutils \
-  man tldr less \
+  man tldr less fastfetch \
   kitty \
   htop
 
 mkdir -p ~/.config
+
+if [ ! -d "$HOME/.config/fastfetch" ]; then
+  ln -s $(pwd)/config/fastfetch ~/.config/fastfetch
+fi
 
 if [ ! -d "$HOME/.config/kitty" ]; then
   ln -s $(pwd)/config/kitty ~/.config/kitty
