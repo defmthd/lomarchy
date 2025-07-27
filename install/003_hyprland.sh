@@ -4,7 +4,7 @@ yay -S --noconfirm --needed \
   hyprland hypridle hyprlock polkit-gnome hyprland-qtutils \
   waybar walker-bin mako swww wlogout \
   nautilus sushi gvfs gvfs-smb \
-  papirus-icon-theme elementary-icon-theme \
+  papirus-icon-theme elementary-icon-theme nordic-theme \
   xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
   nwg-look \
   uwsm
@@ -27,4 +27,16 @@ fi
 
 if [ ! -d "$HOME/.config/walker" ]; then
   ln -s $(pwd)/config/walker ~/.config/walker
+fi
+
+if [ ! -d "$HOME/.config/gtk-3.0" ]; then
+  ln -s $(pwd)/config/gtk-3.0 ~/.config/gtk-3.0
+fi
+
+if [ ! -d "$HOME/.config/gtk-4.0" ]; then
+  ln -s $(pwd)/config/gtk-4.0 ~/.config/gtk-4.0
+fi
+
+if [ ! -d "$HOME/.config/xsettingsd" ]; then
+  ln -s $(pwd)/config/xsettingsd ~/.config/xsettingsd
 fi
