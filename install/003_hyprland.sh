@@ -7,6 +7,7 @@ yay -S --noconfirm --needed \
   papirus-icon-theme elementary-icon-theme \
   xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
   nwg-look \
+  mpv imv evince \
   uwsm
 
 if [ ! -d "$HOME/.config/hypr" ]; then
