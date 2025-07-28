@@ -5,10 +5,10 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 30,
+    "height": 40,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["cpu", "tray", "battery", "clock"],
+    "modules-right": ["cpu", "tray", "network", "bluetooth", "battery", "clock"],
  
     "hyprland/workspaces": {
         "format": "{name} {icon}",
@@ -21,6 +21,13 @@
             "6": "🔮",
             "7": "🌜",
             "8": "🎮"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
         },
         "active-only": false
     },
@@ -39,8 +46,30 @@
     },
     
     "tray": {
-        "icon-size": 16,
+        "icon-size": 20,
         "spacing": 8
+    },
+
+    "network": {
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+        "format" : "{icon}",
+        "format-wifi" : "{icon}",
+        "format-ethernet" : "󰀂",
+        "format-disconnected" : "󰖪",
+        "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "D: {bandwidthDownBytes}  U: {bandwidthUpBytes}",
+        "tooltip-format-disconnected": "Disconnected",
+        "interval": 2,
+        "nospacing": 1,
+        "on-click": "kitty --class=Impala -e impala"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "󰂲",
+        "format-connected": "",
+        "tooltip-format": "Devices connected: {num_connections}",
+        "on-click": "blueberry"
     },
 
     "battery": {
