@@ -1,8 +1,10 @@
 app_launch_prefix = "uwsm app -- "
 terminal_title_flag = ""
 locale = ""
-close_when_open = true                                             # Toggle on reopen
+close_when_open = true
 theme_base = []
+theme = "lomarchy"
+theme_location = ["~/.config/walker/mythemes/"]
 monitor = ""
 hotreload_theme = false
 as_window = false
