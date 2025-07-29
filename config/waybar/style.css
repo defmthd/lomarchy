@@ -78,7 +78,7 @@ tooltip {
 #network {
   margin-right: 4px;
   padding: 0px 4px;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 #bluetooth {
@@ -92,7 +92,12 @@ tooltip {
   padding: 0px 4px;
 }
 
+#custom-updates {
+  color: #6fcf97;
+  padding: 0px 8px;
+}
+
 #clock {
   margin-right: 12px;
-  padding: 0px 10px;
+  padding: 0px 4px;
 }
