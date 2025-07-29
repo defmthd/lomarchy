@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yay -S --needed \
-  steam moonlight-qt
+  steam protonplus moonlight-qt
 
 yay -S --noconfirm --needed mangohud gamemode xpadneo-dkms
 
