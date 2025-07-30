@@ -1,9 +1,9 @@
-@define-color selected-text #dca561;
-@define-color text #dcd7ba;
-@define-color base #1f1f28;
-@define-color border #dcd7ba;
-@define-color foreground #dcd7ba;
-@define-color background #1f1f28;
+@define-color selected-text #e0a96d;
+@define-color text #f4eade;
+@define-color base #2b2a27;
+@define-color border #8f857d;
+@define-color foreground #f4eade;
+@define-color background #2b2a27;
 
 /* Reset all elements */
 #window,
@@ -42,7 +42,7 @@ slider,
   background: alpha(@base, 0.95);
   padding: 20px;
   border: 1px solid @border;
-  border-radius: 28px;
+  border-radius: 12px;
 }
 
 /* Search container */
