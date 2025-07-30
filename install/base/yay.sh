@@ -21,5 +21,5 @@ if ! command -v yay &>/dev/null; then
   cd ~/lomarchy
 
   # Add fun and color to the pacman installer
-  sudo sed -i '/^\[options\]/a Color\nILoveCandy' /etc/pacman.conf
+  sudo sed -i '/^\[options\]/a Color' /etc/pacman.conf
 fi
