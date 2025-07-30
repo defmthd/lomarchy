@@ -82,7 +82,7 @@
         "hide-if-empty": true,
         "exec": "count=$(yay -Qua | wc -l); [ \"$count\" -eq 0 ] && echo '' || echo \"$count\"",
         "interval": 450,
-        "on-click": "kitty zsh -c 'yay -Syu; read -n 1'"
+        "on-click": "kitty zsh -c 'yay -Suy --noconfirm --needed; read -n 1'"
     },
 
     "clock": {
