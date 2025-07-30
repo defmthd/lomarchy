@@ -20,6 +20,5 @@ if ! command -v yay &>/dev/null; then
   rm -rf yay-bin
   cd ~/lomarchy
 
-  # Add fun and color to the pacman installer
-  sudo sed -i '/^\[options\]/a Color' /etc/pacman.conf
+  sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 fi
