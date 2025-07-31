@@ -67,7 +67,12 @@ tooltip {
 
 #cpu {
   margin-right: 4px;
-  padding: 0px 10px;
+  padding: 0px 4px;
+}
+
+#memory {
+  margin-right: 4px;
+  padding: 0px 4px;
 }
 
 #tray {
