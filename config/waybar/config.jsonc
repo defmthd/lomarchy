@@ -80,7 +80,7 @@
     "custom/updates": {
         "format": "U: {}",
         "hide-if-empty": true,
-        "exec": "count=$(yay -Qua | wc -l); [ \"$count\" -eq 0 ] && echo '' || echo \"$count\"",
+        "exec": "count=$(pacman -Qu | wc -l); [ \"$count\" -eq 0 ] && echo '' || echo \"$count\"",
         "interval": 450,
         "on-click": "kitty zsh -c 'yay -Suy --noconfirm --needed; read -n 1'"
     },
