@@ -11,7 +11,6 @@ source ./install/desktop/fonts.sh
 source ./install/desktop/wine.sh
 
 source ./install/development/development.sh
-
 source ./install/gaming/steam.sh
 
 source ./install/xtra/apps.sh
