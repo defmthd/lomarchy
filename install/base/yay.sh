@@ -8,6 +8,7 @@ sudo systemctl enable --now cronie.service
 if [ ! -f /etc/cron.hourly/reflector ]; then
     echo '#!/bin/bash' | sudo tee /etc/cron.hourly/reflector > /dev/null
     echo "reflector --country 'Russia' -l 20 --sort rate --save /etc/pacman.d/mirrorlist" | sudo tee -a /etc/cron.hourly/reflector > /dev/null
+    echo "pacman -Syyy" | sudo tee -a /etc/cron.hourly/reflector > /dev/null
     sudo chmod +x /etc/cron.hourly/reflector
 fi
 
