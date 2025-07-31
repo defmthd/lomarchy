@@ -88,6 +88,19 @@
     "clock": {
         "locale": "ru_RU.UTF-8",
         "format": "{:%H:%M}",
-        "tooltip-format": "{:%d.%m.%Y}"
+        "tooltip-format": "<span size='9pt'>{calendar}</span>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'>{}</span>",
+                "days": "<span color='#ffead3'>{}</span>",
+                "weeks": "<span color='#ffead3'>W{}</span>",
+                "weekdays": "<span color='#ffcc66'>{}</span>",
+                "today": "<span color='#ff6699'><b>{}</b></span>"
+            }
+        }
     }
 }
