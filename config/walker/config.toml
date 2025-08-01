@@ -1,3 +1,18 @@
 app_launch_prefix = "uwsm app -- "
 theme = "lomarchy"
 theme_location = ["~/.config/walker/mythemes/"]
+
+
+[builtins.runner]
+hidden = true
+
+[builtins.translation]
+delay = 1000
+weight = 5
+name = "translation"
+icon = "accessories-dictionary"
+placeholder = "Translation"
+switcher_only = false
+provider = "googlefree"
+hidden = false
+
