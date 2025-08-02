@@ -2,8 +2,13 @@ app_launch_prefix = "uwsm app -- "
 theme = "lomarchy"
 theme_location = ["~/.config/walker/mythemes/"]
 
+[search]
+placeholder = " Search..."
 
 [builtins.runner]
+hidden = true
+
+[builtins.hyprland_keybinds]
 hidden = true
 
 [builtins.translation]
