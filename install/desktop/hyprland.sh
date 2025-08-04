@@ -7,7 +7,8 @@ yay -S --noconfirm --needed \
   papirus-icon-theme elementary-icon-theme \
   xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
   nwg-look \
-  uwsm
+  uwsm \
+  brightnessctl
 
 if [ ! -d "$HOME/.config/hypr" ]; then
   ln -s $(pwd)/config/hypr ~/.config/hypr
