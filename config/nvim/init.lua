@@ -13,3 +13,5 @@ vim.keymap.set('n', '<leader>e', function()
   nvim_tree_api.tree.toggle()
 end, { desc = "Toggle NvimTree" })
 
+vim.cmd("highlight Normal ctermbg=NONE guibg=NONE")
+
