@@ -87,7 +87,7 @@
         "format": "U: {}",
         "hide-if-empty": true,
         "exec": "count=$(yay -Qu | wc -l); [ \"$count\" -eq 0 ] && echo '' || echo \"$count\"",
-        "interval": 450,
+        "interval": 60,
         "on-click": "kitty zsh -c 'yay -Suy --noconfirm --needed; read -n 1'"
     },
 

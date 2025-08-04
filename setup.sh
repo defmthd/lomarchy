@@ -13,6 +13,8 @@ source ./install/desktop/wine.sh
 source ./install/development/development.sh
 source ./install/development/vim.sh
 source ./install/development/ai.sh
+source ./install/development/docker.sh
+
 source ./install/gaming/steam.sh
 
 source ./install/xtra/apps.sh
