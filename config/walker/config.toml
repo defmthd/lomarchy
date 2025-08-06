@@ -21,3 +21,9 @@ switcher_only = false
 provider = "googlefree"
 hidden = false
 
+[builtins.commands]
+hidden = true
+
+[builtins.custom_commands]
+hidden = true
+
