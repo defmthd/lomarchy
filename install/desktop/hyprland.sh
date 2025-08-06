@@ -6,7 +6,7 @@ yay -S --noconfirm --needed \
   nautilus sushi gvfs gvfs-smb \
   papirus-icon-theme elementary-icon-theme \
   xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
-  grim slurp swappy \ 
+  grim slurp swappy wl-clipboard \
   nwg-look \
   uwsm \
   brightnessctl
