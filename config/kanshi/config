@@ -1,0 +1,10 @@
+profile "external" {
+    output "eDP-1" disable
+    output "HDMI-A-1" enable
+}
+
+profile "laptop-only" {
+    output "eDP-1" enable
+    output "HDMI-A-1" disable
+}
+

@@ -9,7 +9,7 @@ yay -S --noconfirm --needed \
   grim slurp swappy wl-clipboard \
   nwg-look \
   uwsm \
-  brightnessctl
+  kanshi brightnessctl
 
 if [ ! -d "$HOME/.config/hypr" ]; then
   ln -s $(pwd)/config/hypr ~/.config/hypr
@@ -42,3 +42,8 @@ fi
 if [ ! -d "$HOME/.config/xsettingsd" ]; then
   ln -s $(pwd)/config/xsettingsd ~/.config/xsettingsd
 fi
+
+if [ ! -d "$HOME/.config/kanshi" ]; then
+  ln -s $(pwd)/config/kanshi ~/.config/kanshi
+fi
+
