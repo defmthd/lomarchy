@@ -10,6 +10,7 @@ yay -S --noconfirm --needed \
   wget curl unzip inetutils \
   man tldr less fastfetch \
   zsh kitty \
+  ripgrep \
   htop
 
 mkdir -p ~/.config
