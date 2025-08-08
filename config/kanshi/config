@@ -16,6 +16,15 @@ output "ASUSTek COMPUTER INC PG27AQDP S9LMRS028756" {
   alias $home_1
 }
 
+output "AOC 24G4 12VQ1HA024438" {
+  mode 1920x1080@180
+  position 0,0
+  scale 1
+  adaptive_sync off
+  alias $home_2
+}
+
+
 profile home_1 {
   output $home_1 enable
 }
