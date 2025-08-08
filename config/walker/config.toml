@@ -6,9 +6,11 @@ theme_location = ["~/.config/walker/mythemes/"]
 placeholder = " Search..."
 
 [builtins.runner]
+switcher_only = true
 hidden = true
 
 [builtins.hyprland_keybinds]
+switcher_only = true
 hidden = true
 
 [builtins.translation]
@@ -22,8 +24,17 @@ provider = "googlefree"
 hidden = false
 
 [builtins.commands]
+switcher_only = true
 hidden = true
 
 [builtins.custom_commands]
+switcher_only = true
 hidden = true
 
+[builtins.windows]
+switcher_only = true
+hidden = true
+
+[builtins.finder]
+switcher_only = true
+hidden = true
