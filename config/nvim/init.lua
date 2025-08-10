@@ -21,7 +21,7 @@ vim.opt.signcolumn = 'yes'
 
 vim.opt.backspace = 'indent,eol,start'
 
-vim.opt.clipboard:append('unnamedplus')
+-- vim.opt.clipboard:append('unnamedplus')
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -48,3 +48,4 @@ tree_sitter_config.setup({
   highlight = { enable = true },
   indent = { enable = true},
 })
+
