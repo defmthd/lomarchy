@@ -41,3 +41,10 @@ end, { desc = "Toggle NvimTree" })
 
 vim.cmd("highlight Normal ctermbg=NONE guibg=NONE")
 
+local tree_sitter_config = require('nvim-treesitter.configs')
+tree_sitter_config.setup({
+  ensure_installed = { 'lua', 'ruby', 'python' },
+  sync_install = false,
+  highlight = { enable = true },
+  indent = { enable = true},
+})
