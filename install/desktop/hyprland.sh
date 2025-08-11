@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yay -S --noconfirm --needed \
-  hyprland hypridle hyprlock polkit-gnome hyprland-qtutils \
+  hyprland hypridle hyprlock hyprsunset polkit-gnome hyprland-qtutils \
   waybar walker-bin libqalculate mako swww wlogout \
   nautilus sushi gvfs gvfs-smb \
   papirus-icon-theme elementary-icon-theme \
