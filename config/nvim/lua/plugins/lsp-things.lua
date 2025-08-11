@@ -10,7 +10,7 @@ return {
     'mason-org/mason-lspconfig.nvim',
     config = function()
       require('mason-lspconfig').setup({
-        ensure_installed = { 'lua_ls', 'stylua' },
+        ensure_installed = { 'lua_ls', 'stylua', 'pyright', 'ruff' },
       })
     end,
   },
@@ -36,6 +36,8 @@ return {
         sources = {
           null_ls.builtins.formatting.stylua,
           null_ls.builtins.diagnostics.stylua,
+          null_ls.builtins.formatting.pyright,
+          null_ls.builtins.diagnostics.pyright,
         },
       })
 
