@@ -26,7 +26,7 @@ vim.opt.backspace = 'indent,eol,start'
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
-require("config.lazy")
+require('config.lazy')
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
@@ -34,18 +34,17 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
-local nvim_tree_api = require "nvim-tree.api"
+local nvim_tree_api = require('nvim-tree.api')
 vim.keymap.set('n', '<leader>e', function()
   nvim_tree_api.tree.toggle()
-end, { desc = "Toggle NvimTree" })
+end, { desc = 'Toggle NvimTree' })
 
-vim.cmd("highlight Normal ctermbg=NONE guibg=NONE")
+vim.cmd('highlight Normal ctermbg=NONE guibg=NONE')
 
 local tree_sitter_config = require('nvim-treesitter.configs')
 tree_sitter_config.setup({
   ensure_installed = { 'lua', 'ruby', 'python' },
   sync_install = false,
   highlight = { enable = true },
-  indent = { enable = true},
+  indent = { enable = true },
 })
-
