@@ -32,7 +32,6 @@ if [ ! -d "$HOME/.config/stylua" ]; then
 fi
 
 
-
 # Zsh
 if [ ! -d "$HOME/.config/my.sh" ]; then
   ln -s $(pwd)/config/my.sh ~/.config/my.sh
