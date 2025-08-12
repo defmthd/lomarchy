@@ -31,3 +31,14 @@ if [ ! -d "$HOME/.config/stylua" ]; then
   ln -s $(pwd)/config/stylua ~/.config/stylua
 fi
 
+
+
+# Zsh
+if [ ! -d "$HOME/.config/my.sh" ]; then
+  ln -s $(pwd)/config/my.sh ~/.config/my.sh
+fi
+
+if ! grep -q 'source ~/.config/my.zsh' ~/.zshrc; then
+  echo 'source ~/.config/my.sh' >> ~/.zshrc
+fi
+
