@@ -1,0 +1,2 @@
+alias ul="yay -Suy"
+

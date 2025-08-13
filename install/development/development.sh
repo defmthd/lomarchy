@@ -37,7 +37,15 @@ if [ ! -d "$HOME/.config/my.sh" ]; then
   ln -s $(pwd)/config/my.sh ~/.config/my.sh
 fi
 
-if ! grep -q 'source ~/.config/my.zsh' ~/.zshrc; then
+if [ ! -d "$HOME/.config/aliases.sh" ]; then
+  ln -s $(pwd)/config/aliases.sh ~/.config/aliases.sh
+fi
+
+if ! grep -q 'source ~/.config/my.sh' ~/.zshrc; then
   echo 'source ~/.config/my.sh' >> ~/.zshrc
+fi
+
+if ! grep -q 'source ~/.config/aliases.sh' ~/.zshrc; then
+  echo 'source ~/.config/aliases.sh' >> ~/.zshrc
 fi
 
