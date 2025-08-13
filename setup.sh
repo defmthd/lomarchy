@@ -18,4 +18,6 @@ source ./install/development/docker.sh
 source ./install/gaming/steam.sh
 
 source ./install/xtra/apps.sh
+source ./install/xtra/appsdef.sh
 source ./install/xtra/mimetypes.sh
+
