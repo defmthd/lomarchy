@@ -33,11 +33,11 @@ fi
 
 
 # Zsh
-if [ ! -d "$HOME/.config/my.sh" ]; then
+if [ ! -f "$HOME/.config/my.sh" ]; then
   ln -s $(pwd)/config/my.sh ~/.config/my.sh
 fi
 
-if [ ! -d "$HOME/.config/aliases.sh" ]; then
+if [ ! -f "$HOME/.config/aliases.sh" ]; then
   ln -s $(pwd)/config/aliases.sh ~/.config/aliases.sh
 fi
 
