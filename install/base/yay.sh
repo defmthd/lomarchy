@@ -3,6 +3,16 @@
 sudo pacman -S --needed --noconfirm base-devel git \
   reflector rsync cronie
 
+# Add cachyos repos
+if ! grep -qE '^\[.*cachyos.*\]' /etc/pacman.conf; then
+  curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
+  tar xvf cachyos-repo.tar.xz && cd cachyos-repo
+  sudo ./cachyos-repo.sh
+  cd ..
+  rm -rf cachyos-repo
+  rm cachyos-repo.tar.xz
+fi
+
 sudo systemctl enable --now cronie.service
 
 if [ ! -f /etc/cron.hourly/reflector ]; then
