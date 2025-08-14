@@ -8,3 +8,5 @@ mkdir -p ~/.local/share/applications
 cp ./applications/*.desktop ~/.local/share/applications/
 cp ./applications/hidden/*.desktop ~/.local/share/applications/
 
+update-desktop-database ~/.local/share/applications
+
