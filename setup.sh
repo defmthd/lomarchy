@@ -1,5 +1,6 @@
 source ./install/base/yay.sh
 source ./install/base/terminal.sh
+source ./install/base/kernel.sh
 source ./install/base/grub.sh
 source ./install/base/firmware.sh
 
