@@ -34,7 +34,7 @@ fi
 
 # Zsh
 if [ ! -f "$HOME/.config/my.sh" ]; then
-  ln -s $(pwd)/config/my.sh ~/.config/my.sh
+  echo '' > ~/.config/my.sh
 fi
 
 if [ ! -f "$HOME/.config/aliases.sh" ]; then
