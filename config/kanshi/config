@@ -1,13 +1,3 @@
-profile "external" {
-  output "eDP-1" disable
-  output "HDMI-A-1" enable
-}
-
-profile "laptop-only" {
-  output "eDP-1" enable
-  output "HDMI-A-1" disable
-}
-
 output "ASUSTek COMPUTER INC PG27AQDP S9LMRS028756" {
   mode 2560x1440@480
   position 0,0
@@ -24,8 +14,24 @@ output "AOC 24G4 12VQ1HA024438" {
   alias $home_2
 }
 
+output "Samsung Display Corp. 0x419D " {
+  mode 2880x1800@120
+  position 0,0
+  scale 1.5
+  adaptive_sync off
+  alias $laptop
+}
 
 profile home_1 {
   output $home_1 enable
 }
 
+profile "external" {
+  output "eDP-1" disable
+  output "HDMI-A-1" enable
+}
+
+profile "laptop-only" {
+  output $laptop enable
+  output $home_2 disable
+}
