@@ -1,3 +1,3 @@
-alias ul="yay -Suy"
+alias ul="yay -Suy --noconfirm --needed"
 alias ur="sudo reflector --verbose --country 'Russia' -l 20 --sort rate --save /etc/pacman.d/mirrorlist"
 
