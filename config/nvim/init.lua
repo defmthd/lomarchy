@@ -34,6 +34,12 @@ vim.keymap.set('n', '<leader>sh', '<C-w>s', { desc = 'Split window horizontally'
 vim.keymap.set('n', '<leader>se', '<C-w>=', { desc = 'Make splits equal size' })
 vim.keymap.set('n', '<leader>sx', '<cmd>close<CR>', { desc = 'Close current split' })
 
+-- Keymaps: Splits Sizes
+vim.keymap.set("n", "<C-Up>", "<C-w>+", { desc = 'Split increase height' })
+vim.keymap.set("n", "<C-Down>", "<C-w>-", { desc = 'Split decrease height' })
+vim.keymap.set("n", "<C-Right>", "<C-w>>", { desc = 'Split increase width' })
+vim.keymap.set("n", "<C-Left>", "<C-w><", { desc = 'Split decrease width' })
+
 -- Keymaps: Tabs
 vim.keymap.set('n', '<leader>to', '<cmd>tabnew<CR>', { desc = 'Open new tab' })
 vim.keymap.set('n', '<leader>tx', '<cmd>tabclose<CR>', { desc = 'Close current tab' })
