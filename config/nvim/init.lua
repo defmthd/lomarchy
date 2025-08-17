@@ -40,6 +40,12 @@ vim.keymap.set("n", "<C-Down>", "<C-w>-", { desc = 'Split decrease height' })
 vim.keymap.set("n", "<C-Right>", "<C-w>>", { desc = 'Split increase width' })
 vim.keymap.set("n", "<C-Left>", "<C-w><", { desc = 'Split decrease width' })
 
+-- Keymaps: Move to splits
+vim.keymap.set("n", "<leader><Left>",  "<C-w>h", { desc = 'Move to left split' })
+vim.keymap.set("n", "<leader><Down>",  "<C-w>j", { desc = 'Move to below split' })
+vim.keymap.set("n", "<leader><Up>",    "<C-w>k", { desc = 'Move to above split' })
+vim.keymap.set("n", "<leader><Right>", "<C-w>l", { desc = 'Move to right split' })
+
 -- Keymaps: Tabs
 vim.keymap.set('n', '<leader>to', '<cmd>tabnew<CR>', { desc = 'Open new tab' })
 vim.keymap.set('n', '<leader>tx', '<cmd>tabclose<CR>', { desc = 'Close current tab' })
