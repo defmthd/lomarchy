@@ -3,7 +3,7 @@ return {
   event = 'VeryLazy',
   version = false, -- Never set this value to "*"! Never!
   opts = {
-    provider = 'gemini',
+    provider = 'ollama',
     providers = {
       gemini = {
         model = 'gemini-2.5-flash',
@@ -15,6 +15,15 @@ return {
       },
       openai = {
         model = 'gpt-4o',
+        timeout = 30000, -- Timeout in milliseconds
+        extra_request_body = {
+          temperature = 0.75,
+          max_tokens = 20480,
+        },
+      },
+      ollama = {
+        endpoint = "http://localhost:11434",
+        model = 'qwen3-coder:latest',
         timeout = 30000, -- Timeout in milliseconds
         extra_request_body = {
           temperature = 0.75,
