@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S --needed --noconfirm base-devel git \
+sudo pacman -S --needed --noconfirm base-devel git curl wget \
   reflector rsync cronie
 
 # Add cachyos repos

@@ -7,7 +7,7 @@ if grep '#ru_RU.UTF-8' /etc/locale.gen; then
 fi
 
 yay -S --noconfirm --needed \
-  wget curl unzip inetutils \
+  unzip inetutils \
   man tldr less fastfetch \
   zsh kitty \
   ripgrep \
