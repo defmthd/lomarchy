@@ -15,7 +15,7 @@ output "AOC 24G4 12VQ1HA024438" {
 }
 
 output "Samsung Display Corp. 0x419D Unknown" {
-  mode 2880x1800@120
+  mode 2880x1800@60
   position 0,0
   scale 1.8
   adaptive_sync off
