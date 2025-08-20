@@ -29,6 +29,9 @@ if [ ! -f /etc/cron.hourly/reflector ]; then
   echo "reflector --country 'Russia' -l 20 --sort rate --save /etc/pacman.d/mirrorlist" | sudo tee -a /etc/cron.hourly/reflector > /dev/null
   echo "pacman -Syyy" | sudo tee -a /etc/cron.hourly/reflector > /dev/null
   sudo chmod +x /etc/cron.hourly/reflector
+
+  # Update reflector on first install
+  reflector --country 'Russia' -l 20 --sort rate --save /etc/pacman.d/mirrorlist
 fi
 
 if ! command -v yay &>/dev/null; then
