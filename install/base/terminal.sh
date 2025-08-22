@@ -50,3 +50,9 @@ fi
 if [ ! -d "$HOME/.config/kitty" ]; then
   ln -s $(pwd)/config/kitty ~/.config/kitty
 fi
+
+if [ ! -d "$HOME/.config/yazi" ]; then
+  ln -s $(pwd)/config/yazi ~/.config/yazi
+fi
+
+ya pkg add boydaihungst/gvfs

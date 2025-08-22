@@ -1,0 +1,7 @@
+[[plugin.deps]]
+use = "boydaihungst/gvfs"
+rev = "8e97b2a"
+hash = "c746e1d1e09349caf0fa1ca03fe62ee4"
+
+[flavor]
+deps = []
