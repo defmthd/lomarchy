@@ -11,7 +11,8 @@ yay -S --noconfirm --needed \
   man tldr less fastfetch \
   zsh kitty \
   ripgrep \
-  htop
+  htop \
+  yazi
 
 mkdir -p ~/.config
 
