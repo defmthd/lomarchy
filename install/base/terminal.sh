@@ -12,7 +12,7 @@ yay -S --noconfirm --needed \
   zsh kitty \
   ripgrep \
   htop \
-  yazi
+  yazi ffmpeg 7zip jq poppler fd fzf zoxide resvg imagemagick
 
 mkdir -p ~/.config
 
@@ -55,4 +55,5 @@ if [ ! -d "$HOME/.config/yazi" ]; then
   ln -s $(pwd)/config/yazi ~/.config/yazi
 fi
 
-ya pkg add boydaihungst/gvfs
+ya pkg upgrade
+
