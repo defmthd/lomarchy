@@ -3,5 +3,7 @@ use = "boydaihungst/gvfs"
 rev = "8e97b2a"
 hash = "c746e1d1e09349caf0fa1ca03fe62ee4"
 
-[flavor]
-deps = []
+[[flavor.deps]]
+use = "dangooddd/kanagawa"
+rev = "1f3b3c7"
+hash = "16ea0ff3583131788d57d5f7d34d0f61"
