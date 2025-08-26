@@ -9,7 +9,11 @@ yay -S --noconfirm --needed \
   grim slurp swappy wl-clipboard \
   nwg-look \
   uwsm \
-  kanshi brightnessctl
+  kanshi \
+  brightnessctl \
+  swayosd
+
+sudo systemctl enable --now swayosd-libinput-backend.service
 
 if [ ! -d "$HOME/.config/hypr" ]; then
   ln -s $(pwd)/config/hypr ~/.config/hypr
@@ -45,5 +49,9 @@ fi
 
 if [ ! -d "$HOME/.config/kanshi" ]; then
   ln -s $(pwd)/config/kanshi ~/.config/kanshi
+fi
+
+if [ ! -d "$HOME/.config/swayosd" ]; then
+  ln -s $(pwd)/config/swayosd ~/.config/swayosd
 fi
 
