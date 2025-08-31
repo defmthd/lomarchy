@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "boydaihungst/gvfs"
-rev = "8e97b2a"
-hash = "c746e1d1e09349caf0fa1ca03fe62ee4"
+rev = "b58c305"
+hash = "92dc8bdc3d9cbb36e03111b4cad231fc"
 
 [[flavor.deps]]
 use = "dangooddd/kanagawa"
