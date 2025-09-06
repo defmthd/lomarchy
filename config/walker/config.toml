@@ -60,3 +60,5 @@ hidden = true
 switcher_only = true
 hidden = true
 
+[builtins.bookmarks]
+hidden = true
