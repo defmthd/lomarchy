@@ -1,9 +1,9 @@
 @define-color selected-text #e0a96d;
 @define-color text #f4eade;
 @define-color base #2b2a27;
-@define-color border #8f857d;
-@define-color foreground #f4eade;
-@define-color background #2b2a27;
+@define-color border #444;
+@define-color foreground #aaa;
+@define-color background #333;
 
 /* Reset all elements */
 #window,
@@ -28,7 +28,7 @@ slider,
 
 * {
   font-family: 'Agave Nerd Font Mono', monospace;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 /* Window */
@@ -42,7 +42,7 @@ slider,
   background: alpha(@base, 0.95);
   padding: 20px;
   border: 1px solid @border;
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 /* Search container */
@@ -89,7 +89,6 @@ slider,
 
 /* List items */
 child {
-  padding: 0px 12px;
   background: transparent;
   border-radius: 0;
 }
@@ -102,6 +101,7 @@ child:hover {
 /* Item layout */
 #item {
   padding: 0;
+  margin-left: 12px;
 }
 
 /* Icon */
