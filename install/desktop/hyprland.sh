@@ -2,7 +2,7 @@
 
 yay -S --noconfirm --needed \
   hyprland hypridle hyprlock hyprsunset polkit-gnome hyprland-qtutils \
-  waybar walker-bin libqalculate mako swww wlogout \
+  waybar walker-bin libqalculate mako swww \
   nautilus sushi gvfs gvfs-smb \
   papirus-icon-theme elementary-icon-theme \
   xdg-desktop-portal-hyprland xdg-desktop-portal-gtk \
