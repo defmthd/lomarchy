@@ -1,0 +1,10 @@
+window {
+  border-radius: 0;
+  opacity: 1;
+  border: 1px solid gray;
+}
+
+progressbar {
+  border-radius: 0;
+}
+
