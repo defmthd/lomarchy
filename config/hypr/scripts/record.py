@@ -3,7 +3,7 @@ from faster_whisper import WhisperModel
 
 LOCK_FILE = "/tmp/voice_recording.lock"
 SAMPLE_RATE = 16000
-MODEL_SIZE = "medium"
+MODEL_SIZE = "base"
 
 if os.path.exists(LOCK_FILE):
     # Stop mode: send SIGUSR1 to running PID
@@ -40,7 +40,6 @@ def stop_recording(signum, frame):
     # Copy to clipboard
     subprocess.run(["wl-copy"], input=text.encode())
     os.remove(LOCK_FILE)
-    subprocess.run(["makoctl", "dismiss-all"])
     subprocess.run(["notify-send", "✅ Transcription done and copied to clipboard!"])
     sys.exit(0)
 
@@ -49,7 +48,6 @@ signal.signal(signal.SIGUSR1, stop_recording)
 # Start recording
 stream = sd.InputStream(samplerate=SAMPLE_RATE, channels=1, callback=lambda indata, frames, time, status: audio_buffer.append(indata.copy()))
 stream.start()
-subprocess.run(["makoctl", "dismiss-all"])
 subprocess.run(["notify-send", "🎤 Recording...", "Press the keybinding again to stop."])
 
 # Wait indefinitely until signal is received
