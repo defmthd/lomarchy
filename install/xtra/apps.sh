@@ -11,6 +11,7 @@ fi
 
 # Install requirement for dictation. See: hypr/scripts/record.py
 uv pip install --system faster-whisper sounddevice numpy
+# uv pip install --system torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.4
 
 systemctl --user enable --now syncthing.service
 
