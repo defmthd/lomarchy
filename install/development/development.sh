@@ -48,4 +48,3 @@ fi
 if ! grep -q 'source ~/.config/aliases.sh' ~/.zshrc; then
   echo 'source ~/.config/aliases.sh' >> ~/.zshrc
 fi
-
