@@ -8,4 +8,7 @@ fi
 
 yay -S --noconfirm lua-language-server bash-language-server vscode-json-languageserver
 
+npm install -g @microsoft/compose-language-service
+
 gem install solargraph --no-document
+
