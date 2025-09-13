@@ -6,6 +6,6 @@ if [ ! -d "$HOME/.config/nvim" ]; then
   ln -s $(pwd)/config/nvim ~/.config/nvim
 fi
 
-yay -S --noconfirm lua-language-server bash-language-server
+yay -S --noconfirm lua-language-server bash-language-server vscode-json-languageserver
 
 gem install solargraph --no-document
