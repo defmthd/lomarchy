@@ -4,7 +4,8 @@ yay -S --noconfirm --needed visual-studio-code-bin \
   github-desktop-bin github-cli \
   lazygit \
   cargo clang gcc14 llvm mise \
-  stylua
+  stylua \
+  jre21-openjdk dbeaver
 
 if ! grep -q 'eval "$(mise activate zsh)"' ~/.zshrc; then
   echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
@@ -48,3 +49,4 @@ fi
 if ! grep -q 'source ~/.config/aliases.sh' ~/.zshrc; then
   echo 'source ~/.config/aliases.sh' >> ~/.zshrc
 fi
+
