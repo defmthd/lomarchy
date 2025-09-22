@@ -3,7 +3,7 @@
 yay -S --noconfirm --needed visual-studio-code-bin \
   github-desktop-bin github-cli \
   lazygit \
-  cargo clang gcc14 llvm mise \
+  cargo clang gcc14 llvm mise libyaml \
   stylua \
   jre21-openjdk dbeaver
 
