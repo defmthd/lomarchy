@@ -1,15 +1,8 @@
-return {
-  'nvim-tree/nvim-tree.lua',
-  version = '*',
-  lazy = false,
-  dependencies = {
-    'nvim-tree/nvim-web-devicons',
+vim.pack.add({ 'https://github.com/nvim-tree/nvim-tree.lua' })
+
+require('nvim-tree').setup({
+  view = {
+    width = 45,
   },
-  config = function()
-    require('nvim-tree').setup({
-      view = {
-        width = 45,
-      },
-    })
-  end,
-}
+})
+

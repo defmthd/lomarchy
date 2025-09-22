@@ -1,5 +1,1 @@
-return {
-  'folke/which-key.nvim',
-  event = 'VeryLazy',
-  opts = {},
-}
+vim.pack.add({ 'https://github.com/folke/which-key.nvim' })
