@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed neovim
+yay -S --noconfirm --needed neovim-nightly-bin
 
 if [ ! -d "$HOME/.config/nvim" ]; then
   ln -s $(pwd)/config/nvim ~/.config/nvim
