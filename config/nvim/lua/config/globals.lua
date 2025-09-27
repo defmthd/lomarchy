@@ -56,3 +56,4 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 -- New splits will open below
 
+vim.opt.winborder = 'rounded'
