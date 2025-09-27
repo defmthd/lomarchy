@@ -1,3 +1,4 @@
+alias ls="eza -lah"
 alias y="yazi"
 alias vim="nvim"
 alias ul="yay -Suy --noconfirm --needed"

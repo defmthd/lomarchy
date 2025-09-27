@@ -13,6 +13,7 @@ yay -S --noconfirm --needed \
   ripgrep \
   htop \
   yazi ffmpeg 7zip jq poppler fd fzf zoxide resvg imagemagick \
+  eza \
   starship
 
 mkdir -p ~/.config
