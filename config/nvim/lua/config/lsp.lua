@@ -1,4 +1,5 @@
 vim.lsp.enable('lua_ls')
+vim.lsp.enable('solargraph')
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)

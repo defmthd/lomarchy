@@ -10,7 +10,7 @@ yay -S --noconfirm --needed lua-language-server bash-language-server vscode-json
 
 npm install -g @microsoft/compose-language-service
 
-gem install solargraph --no-document
+gem install solargraph solargraph-rails --no-document
 
 # Install vscode extensions
 code --install-extension eamodio.gitlens
