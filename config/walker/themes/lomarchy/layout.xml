@@ -18,7 +18,7 @@
         <property name="valign">start</property>
         <property name="halign">center</property>
         <property name="width-request">600</property>
-        <property name="height-request">540</property>
+        <property name="height-request">530</property>
         <child>
           <object class="GtkBox" id="Box">
             <style>
