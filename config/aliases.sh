@@ -1,7 +1,12 @@
 alias y="yazi"
 alias vim="nvim"
 alias ul="yay -Suy --noconfirm --needed"
-alias ur="sudo reflector --verbose --country 'Russia' -l 20 --sort rate --save /etc/pacman.d/mirrorlist"
+
+function ur () {
+  sudo reflector --verbose --country 'Russia' -l 10 --sort rate --save /etc/pacman.d/mirrorlist
+  sudo pacman -Syyy
+  ul
+}
 
 # Download new screensaver
 # Example:
