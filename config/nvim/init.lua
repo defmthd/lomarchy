@@ -9,6 +9,8 @@ require('plugins.nvim-lualine')
 require('plugins.which-key')
 require('plugins.plenary')
 require('plugins.telescope')
+require('plugins.mason')
+require('plugins.nvim-lspconfig')
 
 require('config.lsp')
 require('config.keymaps')
