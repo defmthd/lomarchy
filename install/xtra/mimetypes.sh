@@ -32,3 +32,7 @@ xdg-mime default mpv.desktop video/x-ms-asf
 xdg-mime default mpv.desktop video/x-ogm+ogg
 xdg-mime default mpv.desktop video/x-theora+ogg
 xdg-mime default mpv.desktop application/ogg
+
+# Open folders with Nautilus
+xdg-mime default org.gnome.Nautilus.desktop inode/directory
+
