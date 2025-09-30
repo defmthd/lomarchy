@@ -2,7 +2,7 @@
 
 yay -S --noconfirm --needed \
   hyprland hypridle hyprlock hyprsunset polkit-gnome hyprland-qtutils \
-  elephant elephant-desktopapplications \
+  elephant elephant-desktopapplications elephant-files elephant-calc \
   waybar walker-bin libqalculate mako swww \
   nautilus sushi gvfs gvfs-smb \
   papirus-icon-theme elementary-icon-theme \
