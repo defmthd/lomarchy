@@ -7,4 +7,3 @@ if ! command -v iwctl &>/dev/null; then
   sudo systemctl enable --now iwd.service
 fi
 
-yay -S --noconfirm --needed impala nekobox-bin
