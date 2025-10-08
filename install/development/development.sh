@@ -27,6 +27,7 @@ fi
 # Node.js
 mise use --global node@lts
 
+
 # Lua
 if [ ! -d "$HOME/.config/stylua" ]; then
   ln -s $(pwd)/config/stylua ~/.config/stylua
