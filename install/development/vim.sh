@@ -17,3 +17,4 @@ gem install solargraph solargraph-rails --no-document
 # code --install-extension anthropic.claude-code
 # code --install-extension mads-hartmann.bash-ide-vscode
 # code --install-extension castwide.solargraph
+# code --install-extension tamasfe.even-better-toml
