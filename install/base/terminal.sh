@@ -57,6 +57,10 @@ if [ ! -d "$HOME/.config/yazi" ]; then
   ln -s $(pwd)/config/yazi ~/.config/yazi
 fi
 
+if [ ! -d "$HOME/.config/eza" ]; then
+  ln -s $(pwd)/config/eza ~/.config/eza
+fi
+
 # Upgrade yazi plugins
 ya pkg upgrade
 
