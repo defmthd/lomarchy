@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yay -S --noconfirm --needed \
-  linux-cachyos linux-cachyos-headers scx-scheds
+  linux-cachyos linux-cachyos-headers cachyos-settings scx-scheds
 
 sudo systemctl enable --now scx_loader
 
