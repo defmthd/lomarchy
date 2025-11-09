@@ -6,8 +6,9 @@ source ./install/base/kernel.sh
 source ./install/base/firmware.sh
 
 yay -S --noconfirm --needed \
-    plasma-desktop konsole dolphin kscreen bluedevil plasma-nm qt5-tools qt6-tools \
-    gwenview okular
+    plasma-desktop konsole dolphin ark kscreen bluedevil plasma-nm qt5-tools qt6-tools \
+    gwenview okular \
+    elementary-icon-theme papirus-icon-theme nwg-look
 
 source ./install/desktop/audio.sh
 source ./install/desktop/fonts.sh
