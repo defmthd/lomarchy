@@ -17,7 +17,7 @@ yay -S --noconfirm --needed \
 sudo systemctl enable sddm.service
 
 source ./install/desktop/audio.sh
-#source ./install/desktop/fonts.sh
+source ./install/desktop/fonts.sh
 source ./install/desktop/wine.sh
 
 source ./install/development/development.sh
