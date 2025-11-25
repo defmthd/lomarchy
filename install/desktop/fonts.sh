@@ -2,8 +2,7 @@
 
 yay -S --noconfirm --needed \
   ttf-jetbrains-mono-nerd \
-  ttf-font-awesome noto-fonts noto-fonts-emoji \
-  noto-fonts-cjk noto-fonts-extra
+  ttf-font-awesome noto-fonts noto-fonts-emoji
 
 if [ ! -d "$HOME/.config/fontconfig" ]; then
   ln -s $(pwd)/config/fontconfig ~/.config/fontconfig
