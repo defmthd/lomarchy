@@ -12,7 +12,9 @@ yay -S --noconfirm --needed \
     sddm sddm-kcm \
     xdg-desktop-portal xdg-desktop-portal-kde \
     kde-gtk-config \
-    kwallet-pam
+    kwallet-pam \
+    kdegraphics-thumbnailers ffmpegthumbs \
+    breeze breeze-gtk
 
 sudo systemctl enable sddm.service
 
