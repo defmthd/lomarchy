@@ -53,6 +53,10 @@ if [ ! -d "$HOME/.config/kitty" ]; then
   ln -s $(pwd)/config/kitty ~/.config/kitty
 fi
 
+if [ ! -d "$HOME/.config/ghostty" ]; then
+  ln -s $(pwd)/config/ghostty ~/.config/ghostty
+fi
+
 if [ ! -d "$HOME/.config/yazi" ]; then
   ln -s $(pwd)/config/yazi ~/.config/yazi
 fi
