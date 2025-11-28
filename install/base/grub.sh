@@ -7,7 +7,7 @@ if ! grep -q "GRUB_CMDLINE_LINUX_DEFAULT.*splash" /etc/default/grub; then
     # Add splash and quiet if not present
     new_cmdline="$current_cmdline"
     if [[ ! "$current_cmdline" =~ splash ]]; then
-      new_cmdline="$new_cmdline splash mitigations=off raid=noautodetect selinux=0 nowatchdog numa=off"
+      new_cmdline="$new_cmdline splash mitigations=off raid=noautodetect selinux=0 nowatchdog numa=off ipv6.disable=1"
     fi
 
     # Trim any leading/trailing spaces
