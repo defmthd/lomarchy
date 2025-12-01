@@ -8,7 +8,7 @@ source ./install/base/firmware.sh
 
 yay -S --noconfirm --needed \
     plasma-desktop konsole dolphin ark kscreen bluedevil plasma-pa plasma-nm qt5-tools qt6-tools \
-    gwenview okular \
+    gwenview okular spectacle \
     elementary-icon-theme papirus-icon-theme nwg-look \
     sddm sddm-kcm \
     xdg-desktop-portal xdg-desktop-portal-kde \
