@@ -15,7 +15,8 @@ yay -S --noconfirm --needed \
     kde-gtk-config \
     kwallet-pam \
     kdegraphics-thumbnailers ffmpegthumbs \
-    breeze breeze-gtk
+    breeze breeze-gtk \
+    localsend
 
 sudo systemctl enable sddm.service
 
