@@ -5,6 +5,7 @@ source ./install/base/yay.sh
 source ./install/base/terminal.sh
 source ./install/base/alia.sh
 source ./install/base/kernel.sh
+source ./install/base/modprobe.sh
 source ./install/base/firmware.sh
 
 yay -S --noconfirm --needed \
