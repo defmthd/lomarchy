@@ -3,6 +3,7 @@
 source ./install/base/grub.sh
 source ./install/base/yay.sh
 source ./install/base/terminal.sh
+source ./install/base/alia.sh
 source ./install/base/kernel.sh
 source ./install/base/firmware.sh
 
@@ -25,6 +26,9 @@ source ./install/desktop/fonts.sh
 source ./install/desktop/wine.sh
 
 source ./install/development/development.sh
+source ./install/development/git.sh
+source ./install/development/mise.sh
+source ./install/development/dbeaver.sh
 
 source ./install/gaming/steam.sh
 
