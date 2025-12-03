@@ -29,20 +29,14 @@ source ./install/development/development.sh
 source ./install/development/git.sh
 source ./install/development/mise.sh
 source ./install/development/dbeaver.sh
+source ./install/development/vscode.sh
 
 source ./install/gaming/steam.sh
 
-yay -S --noconfirm --needed 1password 1password-cli \
-    google-chrome telegram-desktop obsidian
+source ./install/desktop/chrome.sh
+source ./install/desktop/1pass.sh
 
-if [ ! -f "$HOME/.config/chrome-flags.conf" ]; then
-  ln -s $(pwd)/config/chrome-flags.conf ~/.config/chrome-flags.conf
-fi
-
-# Use Chromium as the default browser
-xdg-settings set default-web-browser google-chrome.desktop
-xdg-mime default google-chrome.desktop x-scheme-handler/http
-xdg-mime default google-chrome.desktop x-scheme-handler/https
+yay -S --noconfirm --needed telegram-desktop obsidian
 
 # Open all images with imv
 xdg-mime default org.kde.gwenview.desktop image/png

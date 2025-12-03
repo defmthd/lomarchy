@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed visual-studio-code-bin stylua
+yay -S --noconfirm --needed stylua
 
 
 # Lua
