@@ -8,6 +8,7 @@ source ./install/base/yay.sh
 source ./install/base/cachyos-repos.sh
 
 source ./install/base/terminal.sh
+# source ./install/base/yazi.sh
 source ./install/base/alia.sh
 
 source ./install/base/kernel.sh
@@ -15,17 +16,9 @@ source ./install/base/modprobe.sh
 # source ./install/base/nvidia.sh
 source ./install/base/firmware.sh
 
-yay -S --noconfirm --needed \
-    plasma-desktop konsole dolphin ark unrar kscreen bluedevil plasma-pa plasma-nm qt5-tools qt6-tools \
-    gwenview okular spectacle \
-    elementary-icon-theme papirus-icon-theme nwg-look \
-    sddm sddm-kcm \
-    xdg-desktop-portal xdg-desktop-portal-kde \
-    kde-gtk-config \
-    kwallet-pam \
-    kdegraphics-thumbnailers ffmpegthumbs \
-    breeze breeze-gtk \
-    localsend
+source ./install/desktop/kde/base.sh
+
+yay -S --noconfirm --needed localsend
 
 sudo systemctl enable sddm.service
 
@@ -45,14 +38,3 @@ source ./install/desktop/chrome.sh
 source ./install/desktop/1pass.sh
 
 yay -S --noconfirm --needed telegram-desktop obsidian
-
-# Open all images with imv
-xdg-mime default org.kde.gwenview.desktop image/png
-xdg-mime default org.kde.gwenview.desktop image/jpeg
-xdg-mime default org.kde.gwenview.desktop image/gif
-xdg-mime default org.kde.gwenview.desktop image/webp
-xdg-mime default org.kde.gwenview.desktop image/bmp
-xdg-mime default org.kde.gwenview.desktop image/tiff
-
-# Open PDFs with the Document Viewer
-xdg-mime default org.kde.okular.desktop application/pdf

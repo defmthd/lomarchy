@@ -6,7 +6,6 @@ yay -S --noconfirm --needed \
   zsh kitty \
   ripgrep \
   htop \
-  yazi ffmpeg 7zip jq poppler fd fzf zoxide resvg imagemagick \
   eza \
   starship
 
@@ -51,18 +50,10 @@ if [ ! -d "$HOME/.config/ghostty" ]; then
   ln -s $(pwd)/config/ghostty ~/.config/ghostty
 fi
 
-if [ ! -d "$HOME/.config/yazi" ]; then
-  ln -s $(pwd)/config/yazi ~/.config/yazi
-fi
-
 if [ ! -d "$HOME/.config/eza" ]; then
   ln -s $(pwd)/config/eza ~/.config/eza
 fi
 
-# Upgrade yazi plugins
-ya pkg upgrade
-
 if ! grep -q 'eval "$(starship init zsh)"' ~/.zshrc; then
   echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 fi
-
