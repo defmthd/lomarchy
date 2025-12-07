@@ -1,26 +1,9 @@
 #!/bin/bash
 
-echo "Adding user '$USER' to wheel group..."
-sudo usermod -aG wheel "$USER"
-
-# Check if wheel group has sudo access
-if ! sudo grep -qE '^%wheel\s+ALL=\(ALL\)\s+NOPASSWD:\s+ALL' /etc/sudoers; then
-  echo "Enabling wheel group sudo access..."
-  echo "%wheel ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers
-fi
+echo '---> Setup pacman mirrors and yay'
 
 sudo pacman -S --needed --noconfirm base-devel git curl wget \
   reflector rsync cronie
-
-# Add cachyos repos
-if ! grep -qE '^\[.*cachyos.*\]' /etc/pacman.conf; then
-  curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
-  tar xvf cachyos-repo.tar.xz && cd cachyos-repo
-  sudo ./cachyos-repo.sh
-  cd ..
-  rm -rf cachyos-repo
-  rm cachyos-repo.tar.xz
-fi
 
 sudo systemctl enable --now cronie.service
 
@@ -42,6 +25,6 @@ if ! command -v yay &>/dev/null; then
   cd -
   rm -rf yay-bin
   cd ~/lomarchy
-
-  sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 fi
+
+sudo sed -i 's/^#Color/Color/' /etc/pacman.conf

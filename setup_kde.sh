@@ -1,9 +1,15 @@
 #!/bin/bash
 
+source ./install/base/locale.sh
+source ./install/base/sudoers.sh
 source ./install/base/grub.sh
+
 source ./install/base/yay.sh
+source ./install/base/cachyos-repos.sh
+
 source ./install/base/terminal.sh
 source ./install/base/alia.sh
+
 source ./install/base/kernel.sh
 source ./install/base/modprobe.sh
 # source ./install/base/nvidia.sh
