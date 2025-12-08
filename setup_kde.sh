@@ -44,4 +44,5 @@ source ./install/desktop/1pass.sh
 
 source ./install/gaming/steam.sh
 source ./install/gaming/mangohud.sh
+# source ./install/gaming/sunshine.sh
 # source ./install/gaming/moonlight.sh
