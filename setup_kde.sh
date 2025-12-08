@@ -39,3 +39,7 @@ source ./install/desktop/1pass.sh
 source ./install/desktop/telegram.sh
 source ./install/desktop/obsidian.sh
 source ./install/desktop/localsend.sh
+
+source ./install/gaming/steam.sh
+source ./install/gaming/mangohud.sh
+source ./install/gaming/moonlight.sh
