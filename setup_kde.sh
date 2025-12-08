@@ -26,13 +26,10 @@ source ./install/desktop/audio.sh
 source ./install/desktop/fonts.sh
 source ./install/desktop/wine.sh
 
-source ./install/development/development.sh
 # source ./install/development/git.sh
 # source ./install/development/mise.sh
-# source ./install/development/dbeaver.sh
 # source ./install/development/vscode.sh
-
-source ./install/gaming/steam.sh
+# source ./install/development/dbeaver.sh
 
 source ./install/desktop/chrome.sh
 source ./install/desktop/1pass.sh
