@@ -16,14 +16,12 @@ sudo sed -i 's/^MODULES=( */MODULES=(/; s/ *)/)/; s/  */ /g' /etc/mkinitcpio.con
 # Remove kms hook from HOOKS
 sudo sed -i '/^HOOKS=/ s/\bkms\b//g; /^HOOKS=/ s/  */ /g' /etc/mkinitcpio.conf
 
-sudo mkinitcpio -P
-
-
-
 # Add kernel options related to nvidia
 if [ ! -f "/etc/modprobe.d/nvidia.conf" ]; then
   sudo cp $(pwd)/config/modprobe/nvidia.conf /etc/modprobe.d/nvidia.conf
 fi
+
+sudo mkinitcpio -P
 
 
 
