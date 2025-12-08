@@ -11,10 +11,13 @@ source ./install/base/cachyos-repos.sh
 
 source ./install/base/zsh.sh
 source ./install/base/commandline.sh
+
+source ./install/base/alia.sh
+
 # source ./install/base/kitty.sh
 source ./install/base/ghostty.sh
+
 # source ./install/base/yazi.sh
-source ./install/base/alia.sh
 
 source ./install/base/kernel.sh
 source ./install/base/modprobe.sh
