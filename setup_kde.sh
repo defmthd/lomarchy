@@ -26,6 +26,7 @@ source ./install/base/modprobe.sh
 source ./install/base/firmware.sh
 
 source ./install/desktop/kde/base.sh
+source ./install/desktop/kde/mountfix.sh
 
 # source ./install/desktop/audio.sh
 source ./install/desktop/fonts.sh
