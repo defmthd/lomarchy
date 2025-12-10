@@ -9,7 +9,8 @@ yay -S --noconfirm --needed \
   inetutils \
   man tldr less \
   fastfetch \
-  htop
+  htop \
+  openssh 
 
 if [ ! -d "$HOME/.config/eza" ]; then
   ln -s $(pwd)/config/eza ~/.config/eza
