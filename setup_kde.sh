@@ -21,6 +21,7 @@ source ./install/base/ghostty.sh
 
 source ./install/base/kernel.sh
 source ./install/base/modprobe.sh
+source ./install/base/sysctl.sh
 
 # source ./install/base/nvidia.sh
 source ./install/base/firmware.sh
