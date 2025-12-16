@@ -27,7 +27,7 @@ source ./install/base/sysctl.sh
 source ./install/base/firmware.sh
 
 source ./install/desktop/kde/base.sh
-source ./install/desktop/kde/powerdevil.sh
+source ./install/desktop/kde/powertimings.sh
 source ./install/desktop/kde/mountfix.sh
 
 # source ./install/desktop/audio.sh
