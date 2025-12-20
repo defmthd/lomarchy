@@ -1,0 +1,10 @@
+[89dfc339-7f28-4830-a274-e94bea805b96]
+Description=Center Ghostty Window
+position=center
+positionrule=2
+wmclass=ghostty
+wmclassmatch=2
+
+[General]
+count=1
+rules=89dfc339-7f28-4830-a274-e94bea805b96
