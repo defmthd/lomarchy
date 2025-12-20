@@ -9,3 +9,6 @@ fi
 if [ ! -f "$HOME/.config/kcminputrc" ]; then
   ln -s $(pwd)/config/kcminputrc $HOME/.config/kcminputrc
 fi
+
+# Add window centering shortcut
+kwriteconfig6 --file kglobalshortcutsrc --group kwin --key "Window Move Center" "Meta+Ctrl+C,,Move Window to the Center"
