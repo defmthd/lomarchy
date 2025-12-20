@@ -1,0 +1,11 @@
+[Keyboard]
+RepeatDelay=200
+
+[Libinput][5426][193][Razer Razer Viper V3 Pro]
+PointerAccelerationProfile=1
+
+[Libinput][5426][193][Razer Razer Viper V3 Pro Mouse]
+PointerAccelerationProfile=1
+
+[Mouse]
+cursorTheme=Breeze_Light
