@@ -1,6 +1,12 @@
 [Keyboard]
 RepeatDelay=250
 
+[Libinput][1133][50504][Logitech USB Receiver Mouse]
+PointerAccelerationProfile=1
+
+[Libinput][48879][57005][Mouse passthrough]
+PointerAccelerationProfile=1
+
 [Libinput][5426][193][Razer Razer Viper V3 Pro]
 PointerAccelerationProfile=1
 
