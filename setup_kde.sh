@@ -28,6 +28,8 @@ source ./install/base/io.sh
 source ./install/base/firmware.sh
 
 source ./install/desktop/kde/base.sh
+source ./install/desktop/kde/language.sh
+source ./install/desktop/kde/keyboard.sh
 source ./install/desktop/kde/powertimings.sh
 source ./install/desktop/kde/mountfix.sh
 
