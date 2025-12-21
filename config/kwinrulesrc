@@ -1,7 +1,7 @@
 [89dfc339-7f28-4830-a274-e94bea805b96]
 Description=Center Ghostty Window
-position=center
-positionrule=2
+position=258,186
+positionrule=3
 wmclass=ghostty
 wmclassmatch=2
 
