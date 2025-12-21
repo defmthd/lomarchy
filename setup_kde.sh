@@ -37,6 +37,7 @@ source ./install/desktop/kde/mountfix.sh
 # source ./install/desktop/audio.sh
 source ./install/desktop/fonts.sh
 source ./install/desktop/wine.sh
+# source ./install/desktop/virtualization.sh
 
 # source ./install/development/git.sh
 # source ./install/development/mise.sh
