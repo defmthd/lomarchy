@@ -23,7 +23,8 @@ fi
 
 sudo mkinitcpio -P
 
-
+# Install hardware decoding dependencies
+yay -S --noconfirm --needed libva-nvidia-driver qt5-wayland qt6-wayland
 
 # Set env variables for proper work
 KV_LIST=(
