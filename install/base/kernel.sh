@@ -7,6 +7,7 @@ yay -S --noconfirm --needed \
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
+sudo systemctl disable --now ananicy-cpp
 sudo systemctl enable --now scx_loader
 
 if [ ! -f /etc/scx_loader.toml ]; then
