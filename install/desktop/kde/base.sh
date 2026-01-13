@@ -3,7 +3,8 @@
 echo '---> Setup KDE base'
 
 yay -S --noconfirm --needed \
-    plasma-desktop konsole dolphin ark unrar kscreen bluedevil plasma-pa plasma-nm qt5-tools qt6-tools \
+    plasma-desktop konsole dolphin ark unrar kscreen bluedevil plasma-pa plasma-nm \
+    qt5-wayland qt6-wayland qt5-tools qt6-tools \
     gwenview okular spectacle \
     papirus-icon-theme \
     sddm sddm-kcm \

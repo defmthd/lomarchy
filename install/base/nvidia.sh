@@ -1,57 +1,43 @@
 #!/bin/bash
 
-MKINITCPIO_CONF="/etc/mkinitcpio.conf"
+yay -S --noconfirm --needed nvidia-open-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver
 
-NVIDIA_MODULES="nvidia nvidia_modeset nvidia_uvm nvidia_drm"
+# Configure modprobe
+sudo tee /etc/modprobe.d/nvidia.conf <<EOF >/dev/null
+options nvidia_drm modeset=1
+options nvidia_drm fbdev=1
 
-# Remove old values
-sudo sed -i 's/\b\(nvidia\|nvidia_modeset\|nvidia_uvm\|nvidia_drm\)\b//g; s/\(\s\+\)/ /g; s/ )/)/' /etc/mkinitcpio.conf
+options nvidia NVreg_PreserveVideoMemoryAllocations=1
+options nvidia NVreg_TemporaryFilePath=/var/tmp
+options nvidia NVreg_EnableGpuFirmware=0
 
-# Add modules at the end of the list
-sudo sed -i "/^MODULES=/ s/)/ ${NVIDIA_MODULES})/" /etc/mkinitcpio.conf
+options nvidia NVreg_UsePageAttributeTable=1
+options nvidia NVreg_InitializeSystemMemoryAllocations=0
+options nvidia NVreg_EnableStreamMemOPs=1
+EOF
 
-# Remove extra spaces
-sudo sed -i 's/^MODULES=( */MODULES=(/; s/ *)/)/; s/  */ /g' /etc/mkinitcpio.conf
-
-# Remove kms hook from HOOKS
-sudo sed -i '/^HOOKS=/ s/\bkms\b//g; /^HOOKS=/ s/  */ /g' /etc/mkinitcpio.conf
-
-# Add kernel options related to nvidia
-if [ ! -f "/etc/modprobe.d/nvidia.conf" ]; then
-  sudo cp $(pwd)/config/modprobe/nvidia.conf /etc/modprobe.d/nvidia.conf
-fi
+# Configure mkinitcpio
+sudo tee /etc/mkinitcpio.conf.d/nvidia.conf <<EOF >/dev/null
+MODULES+=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+EOF
 
 sudo mkinitcpio -P
 
-# Install hardware decoding dependencies
-yay -S --noconfirm --needed libva-nvidia-driver qt5-wayland qt6-wayland
 
-# Set env variables for proper work
-KV_LIST=(
-    "GBM_BACKEND=nvidia-drm"
-    "__GLX_VENDOR_LIBRARY_NAME=nvidia"
-    "NVD_BACKEND=direct"
-    "LIBVA_DRIVER_NAME=nvidia"
-)
-
-for kv in "${KV_LIST[@]}"; do
-    key="${kv%%=*}"
-
-    # Only append if key is missing
-    if ! grep -q "^$key=" /etc/environment; then
-        echo "$kv" | sudo tee -a /etc/environment >/dev/null
-    fi
-done
+# Set env variables
+sudo tee /etc/environment <<EOF >/dev/null
+GBM_BACKEND=nvidia-drm
+NVD_BACKEND=direct
+LIBVA_DRIVER_NAME=nvidia
+__GLX_VENDOR_LIBRARY_NAME=nvidia
+EOF
 
 
-
-# Setup chrome flags for NVIDIA
+# Setup Chrome flags for Nvidia use
 rm -f ~/.config/chrome-flags.conf
 ln -s $(pwd)/config/chrome-flags-nvidia.conf ~/.config/chrome-flags.conf
 
-
-
-# Add nvidia services
+# Enable Nvidia services
 sudo systemctl enable nvidia-suspend.service
 sudo systemctl enable nvidia-hibernate.service
 sudo systemctl enable nvidia-resume.service
