@@ -9,10 +9,12 @@ source ./install/base/grub.sh
 source ./install/base/yay.sh
 source ./install/base/cachyos-repos.sh
 
-source ./install/base/zsh.sh
-source ./install/base/commandline.sh
+source ./install/base/fish.sh
 
-source ./install/base/alia.sh
+# source ./install/base/zsh.sh
+# source ./install/base/commandline.sh
+
+# source ./install/base/alia.sh
 
 # source ./install/base/kitty.sh
 source ./install/base/ghostty.sh
