@@ -56,3 +56,5 @@ source ./install/gaming/steam.sh
 source ./install/gaming/mangohud.sh
 # source ./install/gaming/sunshine.sh
 # source ./install/gaming/moonlight.sh
+
+# source ./install/desktop/coolercontrol.sh
