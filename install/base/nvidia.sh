@@ -9,10 +9,8 @@ options nvidia_drm fbdev=1
 
 options nvidia NVreg_PreserveVideoMemoryAllocations=1
 options nvidia NVreg_TemporaryFilePath=/var/tmp
-options nvidia NVreg_EnableGpuFirmware=0
 
 options nvidia NVreg_UsePageAttributeTable=1
-options nvidia NVreg_InitializeSystemMemoryAllocations=0
 options nvidia NVreg_EnableStreamMemOPs=1
 EOF
 
