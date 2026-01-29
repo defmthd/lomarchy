@@ -33,10 +33,6 @@ __GLX_VENDOR_LIBRARY_NAME=nvidia
 EOF
 
 
-# Setup Chrome flags for Nvidia use
-rm -f ~/.config/chrome-flags.conf
-ln -s $(pwd)/config/chrome-flags-nvidia.conf ~/.config/chrome-flags.conf
-
 # Enable Nvidia services
 sudo systemctl enable nvidia-suspend.service
 sudo systemctl enable nvidia-hibernate.service
