@@ -1,5 +1,5 @@
 [Keyboard]
-RepeatDelay=250
+RepeatDelay=200
 
 [Libinput][1133][50504][Logitech USB Receiver Mouse]
 PointerAccelerationProfile=1
@@ -14,4 +14,4 @@ PointerAccelerationProfile=1
 PointerAccelerationProfile=1
 
 [Mouse]
-cursorTheme=breeze_cursors
+cursorTheme=Breeze_Light
