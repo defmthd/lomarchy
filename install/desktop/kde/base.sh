@@ -20,6 +20,10 @@ if [ ! -f "$HOME/.config/kdeglobals" ]; then
   ln -s $(pwd)/config/kde/kdeglobals $HOME/.config/kdeglobals
 fi
 
+if [ ! -f "$HOME/.config/plasmarc" ]; then
+  ln -s $(pwd)/config/kde/plasmarc $HOME/.config/plasmarc
+fi
+
 # Open images with Gwenview
 xdg-mime default org.kde.gwenview.desktop image/png
 xdg-mime default org.kde.gwenview.desktop image/jpeg
