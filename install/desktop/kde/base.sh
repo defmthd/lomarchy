@@ -16,6 +16,10 @@ yay -S --noconfirm --needed \
 
 sudo systemctl enable sddm.service
 
+if [ ! -f "$HOME/.config/kdeglobals" ]; then
+  ln -s $(pwd)/config/kde/kdeglobals $HOME/.config/kdeglobals
+fi
+
 # Open images with Gwenview
 xdg-mime default org.kde.gwenview.desktop image/png
 xdg-mime default org.kde.gwenview.desktop image/jpeg
