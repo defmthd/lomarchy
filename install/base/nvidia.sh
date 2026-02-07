@@ -3,16 +3,7 @@
 yay -S --noconfirm --needed nvidia-open-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver
 
 # Configure modprobe
-sudo tee /etc/modprobe.d/nvidia.conf <<EOF >/dev/null
-options nvidia_drm modeset=1
-options nvidia_drm fbdev=1
-
-options nvidia NVreg_PreserveVideoMemoryAllocations=1
-options nvidia NVreg_TemporaryFilePath=/var/tmp
-
-options nvidia NVreg_UsePageAttributeTable=1
-options nvidia NVreg_EnableStreamMemOPs=1
-EOF
+sudo cp $(pwd)/config/modprobe/nvidia.conf /etc/modprobe.d/nvidia.conf
 
 # Configure mkinitcpio
 sudo tee /etc/mkinitcpio.conf.d/nvidia.conf <<EOF >/dev/null
