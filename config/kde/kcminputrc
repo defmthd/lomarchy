@@ -1,5 +1,5 @@
 [Keyboard]
-RepeatDelay=200
+RepeatDelay=250
 
 [Libinput][1133][50504][Logitech USB Receiver Mouse]
 PointerAccelerationProfile=1
