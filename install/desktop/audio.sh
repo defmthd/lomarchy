@@ -1,4 +1,4 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed \
+paru -S --noconfirm --needed \
   pamixer wiremix wireplumber

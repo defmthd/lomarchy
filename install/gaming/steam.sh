@@ -2,5 +2,5 @@
 
 echo '---> Steam'
 
-yay -S --needed \
+paru -S --needed \
   steam cachyos-gaming-meta protonplus 

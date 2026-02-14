@@ -2,4 +2,4 @@
 
 echo '---> Dbeaver'
 
-yay -S --noconfirm --needed jre21-openjdk dbeaver
+paru -S --noconfirm --needed jre21-openjdk dbeaver

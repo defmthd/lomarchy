@@ -2,4 +2,4 @@
 
 echo '---> LocalSend'
 
-yay -S --noconfirm --needed localsend
+paru -S --noconfirm --needed localsend

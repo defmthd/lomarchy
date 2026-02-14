@@ -1,12 +1,12 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed neovim-nightly-bin
+paru -S --noconfirm --needed neovim-nightly-bin
 
 if [ ! -d "$HOME/.config/nvim" ]; then
   ln -s $(pwd)/config/nvim ~/.config/nvim
 fi
 
-yay -S --noconfirm --needed lua-language-server bash-language-server vscode-json-languageserver
+paru -S --noconfirm --needed lua-language-server bash-language-server vscode-json-languageserver
 
 npm install -g @microsoft/compose-language-service
 

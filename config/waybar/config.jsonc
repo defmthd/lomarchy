@@ -83,9 +83,9 @@
   "custom/updates": {
     "format": "U: {}",
     "hide-if-empty": true,
-    "exec": "count=$(yay -Qu | wc -l); [ \"$count\" -eq 0 ] && echo '' || echo \"$count\"",
+    "exec": "count=$(paru -Qu | wc -l); [ \"$count\" -eq 0 ] && echo '' || echo \"$count\"",
     "interval": 900,
-    "on-click": "kitty zsh -c 'yay -Suy --noconfirm --needed; read -n 1'"
+    "on-click": "kitty zsh -c 'paru -Suy --noconfirm --needed; read -n 1'"
   },
   "clock": {
     "locale": "ru_RU.UTF-8",

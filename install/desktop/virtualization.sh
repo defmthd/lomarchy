@@ -2,7 +2,7 @@
 
 echo '---> Virtualization'
 
-yay -S --noconfirm --needed qemu-full virt-manager swtpm dnsmasq
+paru -S --noconfirm --needed qemu-full virt-manager swtpm dnsmasq
 
 # This will add the user to the "libvirt" group so they can use it:
 sudo usermod -aG libvirt $USER

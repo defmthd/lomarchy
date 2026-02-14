@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed \
+paru -S --noconfirm --needed \
   ttf-segoe-ui-variable \
   ttf-jetbrains-mono-nerd \
   ttf-font-awesome noto-fonts noto-fonts-emoji \

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed \
+paru -S --noconfirm --needed \
   hyprland hypridle hyprlock hyprsunset polkit-gnome hyprland-qtutils \
   elephant elephant-desktopapplications elephant-files elephant-calc \
   waybar walker-bin libqalculate mako swww \

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --noconfirm --needed nvidia-open-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver
+paru -S --noconfirm --needed nvidia-open-dkms nvidia-utils lib32-nvidia-utils libva-nvidia-driver
 
 # Configure modprobe
 sudo cp $(pwd)/config/modprobe/nvidia.conf /etc/modprobe.d/nvidia.conf

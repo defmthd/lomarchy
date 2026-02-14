@@ -6,7 +6,7 @@ source ./install/base/locale.sh
 source ./install/base/sudoers.sh
 source ./install/base/grub.sh
 
-source ./install/base/yay.sh
+source ./install/base/paru.sh
 source ./install/base/cachyos-repos.sh
 
 source ./install/base/fish.sh

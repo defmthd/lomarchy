@@ -2,4 +2,4 @@
 
 echo '---> Telegram'
 
-yay -S --noconfirm --needed telegram-desktop
+paru -S --noconfirm --needed telegram-desktop

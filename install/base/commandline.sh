@@ -2,7 +2,7 @@
 
 echo '---> Setup base command-line tools'
 
-yay -S --noconfirm --needed \
+paru -S --noconfirm --needed \
   eza \
   ripgrep \
   unzip \

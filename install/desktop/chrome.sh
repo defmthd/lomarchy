@@ -2,7 +2,7 @@
 
 echo '---> Google Chrome'
 
-yay -S --noconfirm --needed google-chrome
+paru -S --noconfirm --needed google-chrome
 
 # Use Chromium as the default browser
 xdg-settings set default-web-browser google-chrome.desktop

@@ -3,6 +3,6 @@
 
 echo '---> Sunshine'
 
-yay -S --noconfirm --needed sunshine
+paru -S --noconfirm --needed sunshine
 
 systemctl --user enable sunshine

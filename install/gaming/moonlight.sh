@@ -3,4 +3,4 @@
 
 echo '---> Moonlight'
 
-yay -S --noconfirm --needed moonlight-qt
+paru -S --noconfirm --needed moonlight-qt

@@ -2,4 +2,4 @@
 
 echo '---> 1Password'
 
-yay -S --noconfirm --needed 1password 1password-cli
+paru -S --noconfirm --needed 1password 1password-cli

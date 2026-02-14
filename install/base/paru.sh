@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo '---> Setup pacman mirrors and yay'
+echo '---> Setup pacman mirrors and paru'
 
 sudo pacman -S --needed --noconfirm base-devel git curl wget \
   reflector rsync cronie
@@ -17,13 +17,13 @@ if [ ! -f /etc/cron.hourly/reflector ]; then
   reflector --country 'Russia' -l 20 --sort rate --save /etc/pacman.d/mirrorlist
 fi
 
-if ! command -v yay &>/dev/null; then
+if ! command -v paru &>/dev/null; then
   cd /tmp
-  git clone http://aur.archlinux.org/yay-bin.git
-  cd yay-bin
+  git clone https://aur.archlinux.org/paru.git
+  cd paru
   makepkg -si --noconfirm
   cd -
-  rm -rf yay-bin
+  rm -rf paru
   cd ~/lomarchy
 fi
 

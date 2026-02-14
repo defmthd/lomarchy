@@ -1,3 +1,3 @@
 function ul
-    yay -Suy --noconfirm --needed
+    paru -Suy --noconfirm --needed
 end
