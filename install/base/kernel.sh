@@ -8,8 +8,10 @@ paru -S --noconfirm --needed \
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 if [ ! -f /etc/scx_loader.toml ]; then
-  echo "default_sched = \"scx_lavd\"" | sudo tee -a /etc/scx_loader.toml > /dev/null
-  echo "default_mode = \"Gaming\"" | sudo tee -a /etc/scx_loader.toml > /dev/null
+  sudo tee /etc/scx_loader.toml > /dev/null <<'EOF'
+default_sched = "scx_lavd"
+default_mode = "Gaming"
+EOF
 fi
 
 sudo systemctl enable --now scx_loader
