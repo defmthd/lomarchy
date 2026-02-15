@@ -147,6 +147,9 @@ toolBarFont=Motiva Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 [Icons]
 Theme=Papirus
 
+[KDE]
+AnimationDurationFactor=0.25
+
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
