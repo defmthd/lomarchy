@@ -12,7 +12,8 @@ paru -S --noconfirm --needed \
     kwallet-pam \
     kdegraphics-thumbnailers ffmpegthumbs \
     breeze breeze-gtk \
-    plasma-login-manager
+    plasma-login-manager \
+    plasma-keyboard
 
 sudo systemctl enable plasmalogin
 
