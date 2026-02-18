@@ -134,6 +134,7 @@ ForegroundVisited=155,89,182
 
 [General]
 BrowserApplication=google-chrome.desktop
+ColorScheme=BreezeLight
 ColorSchemeHash=9f63c7711a13123582e720791ea0f8c0172977d2
 XftAntialias=true
 XftHintStyle=hintslight
@@ -145,10 +146,13 @@ smallestReadableFont=Motiva Sans,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 toolBarFont=Motiva Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
-Theme=Papirus
+Theme=Papirus-Dark
 
 [KDE]
 AnimationDurationFactor=0.25
+LookAndFeelPackage=com.valve.vapor.desktop
+contrast=4
+frameContrast=0.2
 
 [KFileDialog Settings]
 Allow Expansion=false
