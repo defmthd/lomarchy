@@ -7,14 +7,14 @@ paru -S --noconfirm --needed \
     qt5-wayland qt6-wayland qt5-tools qt6-tools \
     gwenview okular spectacle \
     papirus-icon-theme \
-    sddm sddm-kcm \
     xdg-desktop-portal xdg-desktop-portal-kde \
     kde-gtk-config \
     kwallet-pam \
     kdegraphics-thumbnailers ffmpegthumbs \
-    breeze breeze-gtk
+    breeze breeze-gtk \
+    plasma-login-manager
 
-sudo systemctl enable sddm.service
+sudo systemctl enable plasmalogin
 
 if [ ! -f "$HOME/.config/kdeglobals" ]; then
   ln -s $(pwd)/config/kde/kdeglobals $HOME/.config/kdeglobals
