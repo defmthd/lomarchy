@@ -13,8 +13,7 @@ paru -S --noconfirm --needed \
     kdegraphics-thumbnailers ffmpegthumbs \
     breeze breeze-gtk \
     plasma-login-manager \
-    plasma-keyboard \
-    plasma6-themes-vapor-steamos
+    plasma-keyboard
 
 sudo systemctl enable plasmalogin
 
