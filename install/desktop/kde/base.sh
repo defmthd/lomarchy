@@ -12,8 +12,7 @@ paru -S --noconfirm --needed \
     kwallet-pam \
     kdegraphics-thumbnailers ffmpegthumbs \
     breeze breeze-gtk \
-    plasma-login-manager \
-    plasma-keyboard
+    plasma-login-manager
 
 sudo systemctl enable plasmalogin
 
@@ -35,3 +34,4 @@ xdg-mime default org.kde.gwenview.desktop image/tiff
 
 # Open PDFs with Okular
 xdg-mime default org.kde.okular.desktop application/pdf
+
