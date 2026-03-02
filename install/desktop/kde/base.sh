@@ -5,7 +5,7 @@ echo '---> Setup KDE base'
 paru -S --noconfirm --needed \
     plasma-desktop konsole dolphin ark unrar kscreen bluedevil plasma-pa plasma-nm \
     qt5-wayland qt6-wayland qt5-tools qt6-tools \
-    gwenview okular spectacle \
+    gwenview okular spectacle kate \
     papirus-icon-theme \
     xdg-desktop-portal xdg-desktop-portal-kde \
     kde-gtk-config \
