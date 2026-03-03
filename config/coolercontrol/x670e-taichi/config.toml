@@ -14,14 +14,14 @@
 # Example:
 # 21091c4fb341ceab6236e8c9e905ccc263a4ac08134b036ed415925ba4c1645d = "Nvidia GPU"
 [devices]
-be6a1d6c8271af6228fa504bc9bd7669acc198c798b12951482c429564209025 = "nvme0"
+be6a1d6c8271af6228fa504bc9bd7669acc198c798b12951482c429564209025 = "nvme1"
 19e098e312e1b1b39163a343ea22b6ea17f18ec1a803ffe0ce44f5bacd6076ee = "Custom Sensors"
 132f01071a1e1dae0c553abd04be9c33bf7e4fdc93d0c387bac484038d7bbd74 = "NVIDIA GeForce RTX 4090"
 00a4da18625f56275c89e2fcd25a83c08c5ad3326452fa7e252fcc8a89c92493 = "nct6799"
 c1c4f573af5adb37f4b2b21c38e7ab00131dec4e073a10af87799b5e930fee88 = "AMD Ryzen 9 9950X3D 16-Core Processor"
 547e218aec19fccc2143f5aa7c88f8cfb54615dc66b9c91797f64a0b9ed3629c = "nct6686"
-1394ff5423ac29ef0c21b4c0e69042446002b6dc001b923d5b5e3f847af1d4e2 = "nvme1"
-863953b7031e4d9c0fadf381a5523c844fa90c7899570bbbdbd55bac6a9307ab = "nvme2"
+1394ff5423ac29ef0c21b4c0e69042446002b6dc001b923d5b5e3f847af1d4e2 = "nvme2"
+863953b7031e4d9c0fadf381a5523c844fa90c7899570bbbdbd55bac6a9307ab = "nvme0"
 279b9563a1ab94905260e66d05e0e1c4f14ba6c1c233f8d420d66955fa485da9 = "spd5118"
 4d1389a4795e4a40af6b4bb04d20fb56aebc6ea5081844fbf3855c3431f05270 = "spd5118"
 b3e0333a64f8da61f59b52ea3a00bc3623df8647209e1cafdccc9c283d8aef60 = "r8169_0_4c00:00"
@@ -84,7 +84,7 @@ function_uid = "02ba5ea0-89cc-4085-808f-c3b1cc97963b"
 uid = "80852a1c-72d8-46ef-bafd-7de996ba4752"
 name = "CPU Fan"
 p_type = "Graph"
-speed_profile = [[0.0, 0], [30.0, 0], [58.0, 15], [62.0, 50], [70.0, 55], [85.0, 90], [100.0, 100]]
+speed_profile = [[0.0, 0], [30.0, 0], [58.0, 15], [62.0, 50], [70.0, 55], [85.0, 100], [100.0, 100]]
 temp_source = { temp_name = "temp1", device_uid = "c1c4f573af5adb37f4b2b21c38e7ab00131dec4e073a10af87799b5e930fee88" }
 temp_min = 0.0
 temp_max = 100.0
@@ -106,7 +106,7 @@ offset_profile = []
 uid = "b4267c87-0f5a-4846-b180-d176d8c7e877"
 name = "Chassy Fan Bottom"
 p_type = "Graph"
-speed_profile = [[0.0, 0], [40.0, 0], [45.0, 15], [50.0, 50], [90.0, 100], [100.0, 100]]
+speed_profile = [[0.0, 0], [20.0, 10], [40.0, 10], [50.0, 20], [60.0, 35], [70.0, 60], [80.0, 90], [90.0, 100], [100.0, 100]]
 temp_source = { temp_name = "GPU Temp", device_uid = "132f01071a1e1dae0c553abd04be9c33bf7e4fdc93d0c387bac484038d7bbd74" }
 temp_min = 0.0
 temp_max = 100.0
@@ -117,7 +117,7 @@ offset_profile = []
 uid = "2f06229f-04cf-4635-ac2a-59b996de924d"
 name = "Chassy Fan Back"
 p_type = "Graph"
-speed_profile = [[0.0, 0], [40.0, 0], [50.0, 50], [75.0, 100], [100.0, 100]]
+speed_profile = [[0.0, 0], [40.0, 0], [62.0, 50], [75.0, 100], [100.0, 100]]
 temp_source = { temp_name = "GPU Temp", device_uid = "132f01071a1e1dae0c553abd04be9c33bf7e4fdc93d0c387bac484038d7bbd74" }
 temp_min = 0.0
 temp_max = 100.0
@@ -128,7 +128,7 @@ offset_profile = []
 uid = "87f372dd-a71e-4652-9f3d-34508ba72c80"
 name = "GPU Fan"
 p_type = "Graph"
-speed_profile = [[0.0, 0], [39.0, 0], [40.0, 30], [60.0, 38], [70.0, 60], [80.0, 100], [100.0, 100]]
+speed_profile = [[0.0, 0], [39.0, 0], [40.0, 30], [65.0, 38], [70.0, 60], [80.0, 100], [100.0, 100]]
 temp_source = { temp_name = "GPU Temp", device_uid = "132f01071a1e1dae0c553abd04be9c33bf7e4fdc93d0c387bac484038d7bbd74" }
 temp_min = 0.0
 temp_max = 100.0
