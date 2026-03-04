@@ -85,7 +85,7 @@ function_uid = "02ba5ea0-89cc-4085-808f-c3b1cc97963b"
 uid = "80852a1c-72d8-46ef-bafd-7de996ba4752"
 name = "CPU Fan"
 p_type = "Graph"
-speed_profile = [[0.0, 0], [20.0, 5], [35.0, 5], [58.0, 15], [62.0, 50], [70.0, 55], [85.0, 100], [100.0, 100]]
+speed_profile = [[0.0, 0], [20.0, 5], [35.0, 5], [58.0, 15], [62.0, 50], [70.0, 60], [85.0, 100], [100.0, 100]]
 temp_source = { temp_name = "temp1", device_uid = "c1c4f573af5adb37f4b2b21c38e7ab00131dec4e073a10af87799b5e930fee88" }
 temp_min = 0.0
 temp_max = 100.0
