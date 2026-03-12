@@ -10,6 +10,8 @@ paru -S --noconfirm --needed \
     xdg-desktop-portal xdg-desktop-portal-kde \
     kde-gtk-config \
     kwallet-pam \
+    kinfocenter \
+    ocean-sound-theme \
     kdegraphics-thumbnailers ffmpegthumbs \
     breeze breeze-gtk \
     plasma-login-manager
