@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '---> Setup Bluetooth'
+
 # Install bluetooth controls
 paru -S --noconfirm --needed blueberry
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '---> Setup Docker'
+
 paru -S --noconfirm --needed docker docker-compose docker-buildx lazydocker
 
 # Limit log size to avoid running out of disk

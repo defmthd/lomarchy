@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '---> Setup fonts'
+
 paru -S --noconfirm --needed \
   ttf-segoe-ui-variable \
   ttf-jetbrains-mono-nerd \

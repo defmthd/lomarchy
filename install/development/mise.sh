@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '---> Setup mise'
+
 paru -S --noconfirm --needed cargo clang gcc14 llvm mise libyaml
 
 if ! grep -q 'eval "$(mise activate zsh)"' ~/.zshrc; then

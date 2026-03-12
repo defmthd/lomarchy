@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '---> Setup Neovim'
+
 paru -S --noconfirm --needed neovim-nightly-bin
 
 if [ ! -d "$HOME/.config/nvim" ]; then
