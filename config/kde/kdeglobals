@@ -139,10 +139,10 @@ XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=none
 fixed=Fixedsys Excelsior,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-font=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-menuFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-smallestReadableFont=Noto Sans,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=Motiva Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=Motiva Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=Motiva Sans,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=Motiva Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
 Theme=Papirus-Dark
@@ -173,7 +173,7 @@ View Style=DetailTree
 [WM]
 activeBackground=227,229,231
 activeBlend=227,229,231
-activeFont=Noto Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeFont=Motiva Sans,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=35,38,41
 inactiveBackground=239,240,241
 inactiveBlend=239,240,241
