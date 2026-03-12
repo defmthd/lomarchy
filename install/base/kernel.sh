@@ -3,7 +3,7 @@
 echo '---> Add cachyos kernel and headers'
 
 paru -S --noconfirm --needed \
-  linux-cachyos linux-cachyos-headers cachyos-settings scx-scheds
+  linux-cachyos linux-cachyos-headers cachyos-settings scx-scheds scx-tools
 
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
