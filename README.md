@@ -7,11 +7,12 @@ It installs the base system tooling, wires in desktop packages, and symlinks thi
 ## What it sets up
 
 - `paru` bootstrapping, mirror refresh, and CachyOS repositories
+- CachyOS kernel with `scx_loader` and `scx_lavd` scheduler in Gaming mode
 - Core shell and terminal tooling such as Fish, Starship, Ghostty, `ripgrep`, `eza`, and `fastfetch`
 - KDE Plasma desktop packages and personal KDE defaults
 - Development tools such as GitHub CLI, GitHub Desktop, LazyGit, and VS Code
 - Gaming packages such as Steam, MangoHud, Moonlight, and CachyOS gaming meta packages
-- Personal config trees for KDE, Fish, Ghostty, Waybar, Neovim, Walker, MangoHud, and more
+- Personal config trees for KDE, Fish, Ghostty, Neovim, MangoHud, and more
 
 ## Philosophy
 
@@ -63,7 +64,7 @@ Running from the repo root matters because several scripts currently build symli
 4. Developer tooling: GitHub CLI/Desktop, LazyGit, VS Code
 5. Gaming layer: Steam, MangoHud, Moonlight
 
-Most scripts are written to be idempotent or close to it. The intended workflow is to uncomment the pieces you want in [setup_kde.sh](/home/defmthd/lomarchy/setup_kde.sh) and rerun the script.
+Most scripts are written to be idempotent or close to it. The intended workflow is to uncomment the pieces you want in [setup_kde.sh](setup_kde.sh) and rerun the script.
 
 ## Configuration model
 
@@ -76,7 +77,7 @@ Representative config areas in this repo:
 - KDE: globals, Plasma settings, keyboard layout, window rules
 - Terminal and shell: Fish, Ghostty, Eza, Fastfetch
 - Editor: Neovim
-- UI helpers: Waybar, Walker, MangoHud, GTK settings
+- UI helpers: MangoHud
 - Hardware and system tuning: `modprobe`, `sysctl`, CoolerControl profiles
 
 ## Assumptions
@@ -97,16 +98,16 @@ The scripts make privileged changes through `sudo`, install packages from offici
 - The setup order matters. Later steps assume earlier tools and packages already exist.
 - Some packages are CachyOS-specific.
 - The setup currently assumes a GRUB-based system path.
-- Some scripts are intentionally commented out in [setup_kde.sh](/home/defmthd/lomarchy/setup_kde.sh); those are optional, not forgotten.
+- Some scripts are intentionally commented out in [setup_kde.sh](setup_kde.sh); those are optional, not forgotten.
 - Several symlink steps depend on running from the repository root.
 
 ## Typical customization
 
-The main switchboard is [setup_kde.sh](/home/defmthd/lomarchy/setup_kde.sh).
+The main switchboard is [setup_kde.sh](setup_kde.sh).
 
 To customize the machine, the usual pattern is:
 
-- comment or uncomment install steps in [setup_kde.sh](/home/defmthd/lomarchy/setup_kde.sh)
+- comment or uncomment install steps in [setup_kde.sh](setup_kde.sh)
 - edit the matching files under `config/`
 - rerun the setup script
 
