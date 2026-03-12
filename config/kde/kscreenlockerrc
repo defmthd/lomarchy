@@ -1,0 +1,7 @@
+[Daemon]
+LockGrace=100
+Timeout=88
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/defmthd/Downloads/wallhaven-2113k6.jpg
+PreviewImage=/home/defmthd/Downloads/wallhaven-2113k6.jpg
