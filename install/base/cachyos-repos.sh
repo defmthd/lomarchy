@@ -3,10 +3,8 @@
 echo '---> Setup cachyos repos'
 
 if ! grep -qE '^\[.*cachyos.*\]' /etc/pacman.conf; then
-  curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
-  tar xvf cachyos-repo.tar.xz && cd cachyos-repo
-  sudo ./cachyos-repo.sh
-  cd ..
-  rm -rf cachyos-repo
-  rm cachyos-repo.tar.xz
+  curl -fsSL https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz
+  tar xf cachyos-repo.tar.xz
+  sudo cachyos-repo/cachyos-repo.sh
+  rm -rf cachyos-repo cachyos-repo.tar.xz
 fi
